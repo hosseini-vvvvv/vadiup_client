@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../common/environment';
 
 @Component({
   selector: 'app-nav',
@@ -21,25 +22,17 @@ export class NavComponent {
   ngOnInit(): void {
     this.getMenu();
     this.getLogo();
-    this.getHeader_text();
   }
   getMenu() {
-    this.http.get('http://localhost:5136/api/category').subscribe((data) => {
+    this.http.get(environment.server_url + 'category').subscribe((data) => {
       this.category = data;
     });
   }
   getLogo() {
     this.http
-      .get('http://localhost:5136/api/setting/logo_name')
+      .get(environment.server_url + 'setting/logo_name')
       .subscribe((data) => {
         this.logo = data;
-      });
-  }
-  getHeader_text() {
-    this.http
-      .get('http://localhost:5136/api/setting/header_text')
-      .subscribe((data) => {
-        this.header_text = data;
       });
   }
   toggleMenu() {
