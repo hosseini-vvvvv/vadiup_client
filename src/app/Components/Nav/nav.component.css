@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+  .row {
+    width: 100%;
+    background-color: rgb(0 0 0 / 40%);
+    height: 50px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 10%;
+  }
+  /* .container > h1 {
+    height: 50px;
+    font-size: 30px;
+    float: left;
+    color: white;
+    margin: 0;
+    line-height: 50px; */
+}
+.container > a {
+  text-decoration: none;
+  height: 10px;
+  font-size: 15px;
+  float: left;
+  color: white;
+  /* margin: 0; */
+  line-height: 10px;
+}
+
+.container > svg {
+  display: none;
+}
+
+.my-app-menu {
+  display: flex;
+  font-size: 25px;
+  height: 40px;
+  padding: 10px 0;
+  float: right;
+}
+.my-app-menu > a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .row {
+    width: 100%;
+    background-color: rgb(0 0 0 / 40%);
+    height: 45px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container > a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+  }
+
+  .my-app-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .my-app-menu > a {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+}
