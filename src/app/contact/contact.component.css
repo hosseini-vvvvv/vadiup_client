@@ -1,45 +1,49 @@
 @media (min-width: 768px) {
   .contact {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--background-box);
+
     margin: 10px 15%;
     border-radius: 8px;
-    border: 1px solid #d9d4d4;
+    border: 1px solid var(--border-color);
+
     width: 70%;
   }
   h1 {
-    color: #333;
+    color: var(--font-color);
+
     text-align: center;
   }
   p {
-    color: #666;
+    color: var(--font-color);
+
     font-size: 18px;
     text-align: center;
   }
-  
-
 }
 
 @media (max-width: 767px) {
   .contact {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--background-box);
+
     margin: 10px 1%;
     border-radius: 8px;
-    border: 1px solid #d9d4d4;
+    border: 1px solid var(--border-color);
+
     width: 98%;
     box-sizing: border-box;
     font-size: 12px;
   }
   h1 {
-    color: #333;
+    color: var(--font-color);
+
     text-align: center;
   }
   p {
-    color: #666;
+    color: var(--font-color);
+
     font-size: 17px;
     text-align: center;
   }
-  
-
 }

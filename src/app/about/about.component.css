@@ -1,19 +1,21 @@
 @media (min-width: 768px) {
   .about-row {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--background-box);
+
     width: 70%;
-    border: 1px solid #d9d4d4;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     margin: 10px 13%;
     padding: 8px 2%;
   }
   h1 {
-    color: #333;
+    color: var(--font-color);
     text-align: center;
   }
   p {
-    color: #666;
+    color: var(--font-color);
+
     font-size: 17px;
   }
 }
@@ -21,22 +23,23 @@
 @media (max-width: 767px) {
   .about-row {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: var(--background-box);
     width: 94%;
-    border: 1px solid #d9d4d4;
+    border: 1px solid var(--border-color);
+
     border-radius: 8px;
     margin: 4px 1%;
     padding: 8px 2%;
   }
   h1 {
-    color: #333;
+    color: var(--font-color);
+
     text-align: center;
     font-size: 27px;
   }
   p {
-    color: #666;
+    color: var(--font-color);
+
     font-size: 17px;
-    
   }
 }
-

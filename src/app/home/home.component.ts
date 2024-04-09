@@ -8,8 +8,12 @@ import { environment } from '../common/environment';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  header_text: any;
-  home_text: any;
+  header_text: any = {
+    text: '',
+  };
+  home_text: any = {
+    text: '',
+  };
 
   constructor(private http: HttpClient) {}
 
@@ -22,6 +26,8 @@ export class HomeComponent {
     this.http
       .get(environment.server_url + 'setting/header_text')
       .subscribe((data) => {
+        console.log(data);
+
         this.header_text = data;
       });
   }

@@ -8,7 +8,6 @@ import { environment } from '../../common/environment';
   styleUrl: './nav.component.css',
 })
 export class NavComponent {
-  displayMenu: boolean = false;
   category: any;
   logo: any = {
     text: '',
@@ -34,8 +33,5 @@ export class NavComponent {
       .subscribe((data) => {
         this.logo = data;
       });
-  }
-  toggleMenu() {
-    this.displayMenu = !this.displayMenu;
   }
 }

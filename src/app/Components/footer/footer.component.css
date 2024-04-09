@@ -1,3 +1,18 @@
 .footer {
+  /* background-color: var(--primary-color); */
+  margin: 0;
+  padding: 40px;
+  color: var(--font-color);
+
   text-align: center;
+  border-top: 1px solid var(--border-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > svg {
+  margin: 0 6px;
+  width: 18px;
+  height: 18px;
 }

@@ -8,8 +8,12 @@ import { environment } from '../common/environment';
 })
 export class ContactComponent {
   displayMenu: boolean = false;
-  contact_phone: any;
-  contact_email: any;
+  contact_phone: any = {
+    text: '',
+  };
+  contact_email: any = {
+    text: '',
+  };
 
   constructor(private http: HttpClient) {}
 
